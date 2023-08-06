@@ -1,25 +1,67 @@
 
-summary{
+.faq-titulo{
     background-color: var(--cinza-faq);
-    margin-top: 0.5%;
+    margin-top: 1%;
     height: 15vh;
 
-    font-family: var(--fonte-principal);
-    font-weight: 550;
-    color: var(--branco-principal);
+    font-family: 'roboto';
+    font-size: 25px;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 3%;
+
+    
+}
+
+details > .summary-open{
+    margin-top: 0.1%;
+    
+}
+
+details > .summary-open p{
+    padding: 2% 3% 3% 3%
 }
 
 .faq{
-    margin-left: 10% ;
-    margin-right: 10% ;
+   margin: 5% 10% 10% 10%;
+
 }
 
 .titulo-faq{
-    color: var(--branco-principal);
-    font-family: var(--fonte-principal);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+
+    margin-bottom: 2%;
+    
+
    
 }
 
-.texto.faq{
-    color: var(--branco-principal);
+.texto-faq{
+    background-color: #363636;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+.acessar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-acessar{
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+
+    margin-top: 5%;
+
 }
