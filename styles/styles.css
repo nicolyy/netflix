@@ -1,6 +1,8 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@400;900&display=swap');
 @import url("sumary.css");
+@import url("rodape.css");
+
 
 *{
     margin: 0;
@@ -21,19 +23,160 @@
 body{
     background-color: var(--preto-fundo);
 }
-.principal{
-    background-image: url("/img/background.jpg");
-    height: 100vh;
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; /* Define o posicionamento absoluto */
+    width: 100%; /* Ocupa a largura total da tela */
+    z-index: 2; /* Define a ordem de empilhamento */
 }
 
+.logo{
+    width: 150px;
+}
 
+.entrar{
+    background-color: #CF0000;
+    color: var(--branco-princiapal);
+    border: none ;
+    border-radius: 5%;
+    font-family: var(--fonte-principal);
+    
+    padding: 1% 2% 1% 2%;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+
+}
+.principal{
+    background-image: url("../img/background.jpg");
+    width: 100%;
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.principal-titulo{
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+    font-weight: 900;
+    font-size: 50px;
+
+  
+
+  
+   
+}
+
+.principal-subtitulo{
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+    font-weight: none;
+    font-size: 25px;
+   
+}
+
+.principal-texto{
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    
+}
+
+.pesquisa-principal{
+    background-color: rgba(55, 49, 49, 0.33);
+    width: 25rem;
+    height: 3.5rem;
+
+    border: solid 1px var(--branco-princiapal);
+    border-radius: 5px;
+
+    margin-top: 5%;
+   
+}
+
+.bnt-principal{
+    background-color: #CF0000;
+    color: var(--branco-princiapal);
+    width: 10rem;
+    height: 3.5rem;
+
+    border: none ;
+    border-radius: 5%;
+
+    font-family: var(--fonte-principal);
+    font-weight: 550;
+    font-size: 20px;
+
+}
+
+#pesquisa.custom-input::placeholder{
+    color: var(--branco-princiapal);
+    padding-left: 10px;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+
+ 
+
+}
+.box{
+    background: linear-gradient(89deg, #000427 0%, #1224C5 16.67%, rgba(170, 2, 89, 0.99) 40.63%, rgba(176, 0, 85, 0.99) 58.85%, #1224C5 82.81%, #000427 100%);
+    width: 80%;
+    height: 8rem;
+
+    display: flex;
+    
+    justify-content:center;
+    align-items: center;
+
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+}
+
+.box-titulo{
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--branco-princiapal);
+    margin-bottom: 1%;
+
+}
+
+.box-texto{
+    margin-bottom: 2%;
+}
+.box-link{
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    color: #6c7bff ;
+}
+
+.box-item{
+    padding-left: 3%;
+}
 .divisao{
     background-color: var(--cinza-fundo);
     height: 1vh;
+    width: 100%;
+    
 }
 .televisao{
     background-color: var(--preto-fundo);
-    height: 100vh;
+    height: 80vh;
 
     display: flex;
     flex-direction: row;
@@ -45,7 +188,6 @@ body{
     padding-left: 2%;
     padding-right: 2%;
     
-
 }
 
 
@@ -53,11 +195,11 @@ body{
 
 .computador{
     background-color: var(--preto-fundo);
-    height: 100vh;
+    height: 80vh;
 
     margin-top: 0.5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 
@@ -69,7 +211,7 @@ body{
 
 .criancas{
     background-color: var(--preto-fundo);
-    height: 100vh;
+    height: 80vh;
 
     margin-top: 0.5%;
     display: flex;
@@ -85,11 +227,11 @@ body{
 
 .celular{
     background-color: var(--preto-fundo);
-    height: 100vh;
+    height: 80vh;
 
     margin-top: 0.5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 
@@ -115,12 +257,15 @@ body{
     font-family: var(--fonte-principal);
     font-size: 25px;
 
+    margin-top: 5%;
+
+
     
 }
    
 
 .img-dispositivo{
-    width: 100vh;
-    height: 100vh;
+    max-width: 100%;
+    height: 400px;
 
 }
