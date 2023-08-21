@@ -1,0 +1,140 @@
+@import url(styles.css);
+
+.box-login{
+    background-color: #000000;
+
+    margin: 0 50% 0 50% ;
+
+    height: 60%;
+    width: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5% 5% 10% 5%;
+
+    
+}
+
+
+.logo-login{
+    z-index: left;
+    padding: 3% 0 0 5%;
+
+    margin: 0 0 5% 0;
+}
+.login-titulo{
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 35px;
+
+    padding: 2% 0 6% 0;
+
+}
+
+.input-login{
+    background-color: var(--cinza-faq);
+    width:100%;
+
+    margin: 2% 0 2% 0;
+    padding:5% 0 5% 0 ;
+    border-radius: 5px;
+    border-style: none;
+    
+}
+
+.btn-login{
+    background-color: #E50914;
+    width:100%;
+
+    
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--branco-princiapal);
+
+    margin: 8% 0 0 0;
+
+    padding: 4% 1% 4% 1%;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.btn-login:placeholder-shown{
+    font-family: var(--fonte-principal);
+}
+
+.checkbox-login{
+    font-family: var(--fonte-principal);
+    color: var(--branco-princiapal);
+
+    font-size: 12px;
+}
+
+.ajuda-login{
+    font-family: var(--fonte-principal);
+    color: var(--branco-princiapal);
+
+    font-size: 12px;
+    text-decoration: none;
+    padding-left: 45%;
+}
+
+.opcoes-login{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 3% 0 25% 0;
+}
+
+
+.new-assinante-texto{
+    color: var(  --cinza-fundo);
+    font-family: var(--fonte-principal);
+}
+
+.new-assinante-link{
+    color: var(--branco-princiapal);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+
+    padding-left: 1%;
+}
+
+.protecao-texto{
+    color: var(  --cinza-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+
+    padding-top: 3%;
+}
+
+
+.protecao-saibamais{
+    color: blue;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.new-assinante{
+    display: inline-block;
+    
+}
+
+#email::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: #756f6f;
+    padding-left: 5%;
+}
+
+
+
+#password::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: #756f6f;
+    padding-left: 5%;
+}
