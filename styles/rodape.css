@@ -17,10 +17,8 @@
     column-count: 3; /* Define três colunas */
     column-gap: 20px; /* Espaçamento entre as colunas */
 
-    margin: 0 auto;
+    margin: 0 0 0 5%;
     width: 100%;
-
-    
 }
 
 .rodape-container li{
