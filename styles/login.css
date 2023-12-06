@@ -1,7 +1,27 @@
-@import url(styles.css);
+
+
+.principal{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.principal-capa{
+    background-image: url("../img/background.jpg");
+    opacity: 60%;
+    width: 100%;
+    height: 100vh;  
+}
+
 
 .box-login{
     background-color: #000000;
+  
 
     margin: 0 50% 0 50% ;
 
@@ -13,7 +33,8 @@
     justify-content: center;
 
     padding: 5% 5% 10% 5%;
-
+    position: absolute;
+    z-index: 2;
     
 }
 
@@ -85,7 +106,7 @@
     display: flex;
     flex-direction: row;
     
-    padding: 3% 0 25% 0;
+    padding: 3% 0 10% 0;
 }
 
 
@@ -138,3 +159,32 @@
     color: #756f6f;
     padding-left: 5%;
 }
+
+
+ @media (min-width: 320px) and (max-width:600px){
+    .box-login{
+        background-color: #000000;
+      
+    
+        margin: 0 50% 0 50% ;
+    
+        height: 60%;
+        width: 80vw;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+     
+        z-index: 2;
+        
+    }
+
+    
+    .principal-capa{
+        background-color: #000000;
+        width: 100%;
+        height: 100vh;  
+    }
+
+ }
