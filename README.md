@@ -1,5 +1,5 @@
 # Netflix Clone
-<img src="capalogigirlcoding.png" width="100%" />
+<img src="/img/capa.png" width="100%" />
 
 ## Descrição do Projeto 
 Clone do site da Netflix, com a página principal e de login. 
